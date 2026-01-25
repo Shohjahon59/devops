@@ -65,7 +65,7 @@ To better understand how these files interact within the cluster:
 * **Real-time Traffic Analysis:** The "Real-time System Load" time-series graph visualizes incoming HTTP request rates, allowing for immediate identification of traffic spikes or potential bottlenecks.
 * **Log Streaming (Scenario 5):** The "Application Logs" section provides a live feed of microservice activities. As shown in the view, it captures detailed HTTP status codes (e.g., 404 monitoring) and endpoint hits, which is essential for rapid debugging and security auditing.
 
-<img width="2547" height="535" alt="image" src="https://github.com/user-attachments/assets/3297eddc-973b-4c63-8a9c-57106f9d507a" />
+<img width="1000" height="400" alt="5e153914-0305-4b15-9562-21fe5392b06c" src="https://github.com/user-attachments/assets/cc8e4228-60bf-497d-a105-f68c4636d99b" />
 
 ### **Integrated Observability Dashboard: Executive & Infrastructure View**
 
@@ -90,6 +90,7 @@ To better understand how these files interact within the cluster:
 * **Cluster Object Inventory:** The "Kubernetes Resource Count" panel provides a breakdown of all active resources, including 37 ConfigMaps, 21 Services, and 12 Deployments, ensuring all architectural components are correctly initialized.
 * **Workload Monitoring:** The system tracks the operational status of **26 Running Pods** across 5 Namespaces, providing an immediate health check of the distributed microservices.
 * **Performance Trends:** Time-series graphs for **Cluster CPU and Memory Utilization** (image_805557) allow for the identification of historical usage patterns and potential resource leaks over time.
+
 
 <img width="2546" height="346" alt="image" src="https://github.com/user-attachments/assets/fba5cab3-4273-48cb-988a-c6e20000b9d6" />
 
@@ -178,8 +179,8 @@ To better understand how these files interact within the cluster:
 
 * **Target Revision:** The system is tracking the `HEAD` of the repository, ensuring that every commit to the `k8s/` path is automatically reflected in the cluster.
 * **Automated Governance:** The last synchronization occurred recently, proving that the automated deployment pipeline is active and responsive.
+<img width="500" height="500" alt="ChatGPT Image 25 янв  2026 г , 23_57_22" src="https://github.com/user-attachments/assets/667dfe49-aaf1-4fb6-88c5-75f3b8bf6ea9" />
 
-<img width="449" height="433" alt="image" src="https://github.com/user-attachments/assets/395406d5-97a4-40f0-91b3-a35ff5def349" />
 
 
 #### **2. Visual Infrastructure Topology**
