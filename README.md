@@ -52,8 +52,9 @@ To better understand how these files interact within the cluster:
 * **Centralized Access:** Quick navigation to infrastructure health dashboards like *Node Exporter Full* and *Kubernetes / Views / Pods*.
 * **Dashboard-as-Code:** The *Agricultural Platform* dashboard was deployed via a Kubernetes `ConfigMap`, ensuring the monitoring configuration is versioned and reproducible.
 * **Operational Readiness:** The "Welcome to Grafana" status confirms that the data sources (Prometheus and Loki) are successfully integrated and ready for real-time data visualization.
+<img width="1536" height="1024" alt="7826b2a0-a011-4b81-aadd-6d1e203c501b" src="https://github.com/user-attachments/assets/52a67cb7-1937-41ad-adc7-3a80157e8cba" />
 
-<img width="2559" height="789" alt="image" src="https://github.com/user-attachments/assets/76d2b46c-b321-419b-a25c-f67cf16133d7" />
+
 
 ### **Integrated Observability Dashboard: Executive View**
 
