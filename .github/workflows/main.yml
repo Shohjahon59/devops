@@ -1,24 +1,26 @@
-name: Build and Push
+import logging
+from flask import Flask, jsonify
 
-on:
-  push:
-    branches: [ "main" ]
+# Logging sozlamalari (Professional DevOps uslubi)
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("AgricultureApp")
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+app = Flask(__name__)
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+@app.route('/')
+def home():
+    logger.info("Accessing the Farming Procurement Dashboard")
+    return "Farming Procurement System - Shohjahon Edition"
 
-      - name: Build and Push
-        uses: docker/build-push-action@v4
-        with:
-          context: ./app
-          push: true
-          tags: rashidov2005/agriculture-app:latest
+@app.route('/api/status')
+def get_status():
+    # O'zgaruvchi nomlari o'zgartirildi
+    crop_inventory = {
+        "status": "Operational",
+        "farmer_id": "SH-59",
+        "node_health": "100%"
+    }
+    return jsonify(crop_inventory)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
